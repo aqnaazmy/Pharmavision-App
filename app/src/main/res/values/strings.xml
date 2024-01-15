@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pharmavision</string>
+    <string name="txt_semua">Semua</string>
+    <string name="txt_konsultasi">Konsultasi</string>
+    <string name="txt_info_obat">Info Obat</string>
+    <string name="txt_info_penyakit">Info Penyakit</string>
+    <string name="txt_sakit_asma">Pertolongan Pertama Saat Asma</string>
+    <string name="txt_sakit_maag">Pertolongan Pertama Saat Maag</string>
+</resources>
