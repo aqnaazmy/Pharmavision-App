@@ -12,6 +12,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -40,9 +42,12 @@ fun ListBanner(listkard: ListCard, modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Card (
+        ElevatedCard (
+            elevation = CardDefaults.cardElevation(
+                defaultElevation = 8.dp
+            ),
             modifier = Modifier
-                .width(200.dp)
+                .width(190.dp)
                 .height(270.dp),
 
             shape = RoundedCornerShape(16.dp),
@@ -56,12 +61,12 @@ fun ListBanner(listkard: ListCard, modifier: Modifier = Modifier) {
                     contentDescription = null,
                     contentScale = ContentScale.FillHeight,
                     modifier = modifier
-                        .height(150.dp)
+                        .height(155.dp)
                         .fillMaxWidth()
                 )
                 Column (
                     modifier = Modifier
-                        .padding(10.dp)
+                        .padding(12.dp)
                 ){
                     Text(
                         text = stringResource(listkard.txtTopCategory),

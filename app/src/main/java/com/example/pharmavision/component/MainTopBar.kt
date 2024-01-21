@@ -30,7 +30,7 @@ fun MainTopBar( modifier : Modifier = Modifier) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(start = 10.dp, end = 10.dp, top = 16.dp, bottom = 45.dp)
+            .padding(start = 10.dp, end = 10.dp, top = 16.dp, bottom = 30.dp)
     ) {
         Row(
             modifier = Modifier
@@ -40,17 +40,17 @@ fun MainTopBar( modifier : Modifier = Modifier) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Icon(
-                imageVector = Icons.Outlined.Menu,
-                contentDescription = null,
-                tint = Color.White
-            )
+//            Icon(
+//                imageVector = Icons.Outlined.Menu,
+//                contentDescription = null,
+//                tint = Color.White
+//            )
 
             Text(
                 text = "Welcome Back Aqna!",
                 modifier = Modifier
                     .weight(1f)
-                    .padding(horizontal = 16.dp),
+                    .padding(start = 16.dp, end = 0.dp),
                 textAlign = TextAlign.Center,
                 style = TextStyle(
                     color = Color.White
